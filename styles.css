@@ -1,0 +1,184 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+body {
+  color: white;
+  background-color: rgb(111, 121, 137);
+}
+
+header {
+  background-color: rgb(111, 121, 137);
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  border-right: 3px solid rgb(0, 223, 74);
+  border-radius: 50%;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+
+.logo h1 {
+  color: rgb(0, 223, 74);
+  font-size: 1.2rem;
+  padding-top: 8px;
+  font-weight: 600;
+}
+
+.nav-header .logo {
+  margin-left: -10px;
+}
+
+.links-container {
+  display: none;
+}
+
+.burger {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+}
+
+.nav-header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.text {
+  margin: 40px 20px;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.5;
+}
+
+.text h1 {
+  font-size: 3rem;
+  letter-spacing: 8px;
+  font-weight: 900;
+}
+
+.text div {
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+
+.text span {
+  color: rgb(0, 223, 74);
+}
+
+.text p {
+  font-size: 1.4rem;
+  letter-spacing: 5px;
+}
+
+.about-me {
+  background-color: rgb(51, 59, 80);
+  margin: 20px;
+  height: 650px;
+}
+
+.logo-main {
+  height: 60px;
+  width: 60px;
+  padding-top: 3px;
+}
+
+.logo-main h1 {
+  font-size: 2rem;
+}
+
+.logo-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.about-me p {
+  padding: 1px 30px;
+  line-height: 2.3;
+  letter-spacing: 2px;
+}
+
+.download {
+  display: block;
+  margin: 30px auto;
+  background: transparent;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: whitesmoke;
+  padding: 15px 30px;
+  border: 1px solid rgb(0, 223, 74);
+  outline: none;
+}
+
+.download:hover {
+  background-color: rgb(0, 223, 74);
+}
+
+.skills {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./devices.jpg!d") center/cover no-repeat;
+}
+
+.skill-text {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+.skill-text h1 {
+}
+
+.skill-text p {
+  font-size: 1.2rem;
+}
+
+.skill {
+  color: lightgrey;
+  margin: 10px 20px;
+  text-transform: uppercase;
+}
+
+.skill p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.skill div {
+  height: 12px;
+  background-color: rgb(0, 223, 74);
+}
+
+.skill span {
+  display: inline-block;
+}
+
+.html div {
+  max-width: 80%;
+}
+.css div {
+  max-width: 70%;
+}
+.javascript div {
+  max-width: 40%;
+}
+.git div {
+  max-width: 75%;
+}
