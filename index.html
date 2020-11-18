@@ -74,86 +74,126 @@
                 <h1>skills</h1>
                 <p>my knowledge level in software</p>
             </div>
-            <div class="skill html">
+            <div class="skill">
                 <p>html</p>
-                <div></div>
-                <p>80%</p>
+                <div class="level-container">
+                    <div class="level level-html"></div>
+                    <p>80%</p>
+                </div>
             </div>
-            <div class="skill css">
+            <div class="skill">
                 <p>css</p>
-                <div></div>
-                <p>70%</p>
+                <div class="level-container">
+                    <div class="level level-css"></div>
+                    <p>70%</p>
+                </div>
             </div>
-            <div class="skill javascript">
+            <div class="skill">
                 <p>javascript</p>
-                <div></div>
-                <p>40%</p>
+                <div class="level-container">
+                    <div class="level level-javascript"></div>
+                    <p>40%</p>
+                </div>
             </div>
-            <div class="skill git">
+            <!-- <div class="skill">
+                <p>react</p>
+                <div class="level-container">
+                    <div class="level level-react"></div>
+                    <p>4%</p>
+                </div>
+            </div> -->
+            <div class="skill">
                 <p>git</p>
-                <div></div>
-                <p>75%</p>
+                <div class="level-container">
+                    <div class="level level-git"></div>
+                    <p>75%</p>
+                </div>
             </div>
         </section>
         <section class="projects">
-            <div class="mini">
-                <div><img src="./html-css.jpg" alt="html-css"></div>
-                <div>
-                    <i class="fas fa-share-square"></i>
-                </div>
-                <h2>mini projects</h2>
-                <span>html</span>
-                <span>css</span>
-                <div>
-                    <a href="https://github.com/aejazballari?tab=repositories">source code</a>
-                </div>
+            <div>
+                <h1>projects</h1>
+                <p>my latest work</p>
             </div>
-            <div class="js">
-                <div><img src="./js.png" alt="js-logo"></div>
                 <div>
-                    <i class="fas fa-share-square"></i>
+                <div class="mini cards">
+                    <div class="image-html image"> 
+                        <div>
+                            <div class="forward">
+                                <i class="fas fa-share-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>mini projects</h2>
+                    <div>
+                        <span>html</span>
+                        <span>css</span>
+                    </div>
+                    <div class="card-bottom">
+                        <a href="https://github.com/aejazballari?tab=repositories">source code</a>
+                    </div>
                 </div>
-                <h2>vanilla JS projects</h2>
-                <span>javascript</span>
-                <span>html</span>
-                <span>css</span>
-                <div>
-                    <a href="https://github.com/aejazballari?tab=repositories">source code</a>
+                <div class="js cards">
+                    <div class="image-js image">
+                        <div>
+                            <div class="forward">
+                                <i class="fas fa-share-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>vanilla JS projects</h2>
+                    <div>
+                        <span>javascript</span>
+                        <span>html</span>
+                        <span>css</span>
+                    </div>
+                    <div class="card-bottom">
+                        <a href="https://github.com/aejazballari?tab=repositories">source code</a>
+                    </div>
                 </div>
-            </div>
-            <div class="react">
-                <div><img src="./react.png" alt="react-logo"></div>
-                <div>
-                    <i class="fas fa-share-square"></i>
-                </div>
-                <h2>react projects</h2>
-                <span>react</span>
-                <span>html</span>
-                <span>css</span>
-                <div>
-                    <a href="https://github.com/aejazballari?tab=repositories">source code</a>
+                <div class="react cards">
+                    <div class="image-react image">
+                        <div>
+                            <div class="forward">
+                                <i class="fas fa-share-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>react projects</h2>
+                    <div>
+                        <span>react</span>
+                        <span>html</span>
+                        <span>css</span>
+                    </div>
+                    <div class="card-bottom">
+                        <a href="https://github.com/aejazballari?tab=repositories">source code</a>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="contact">
-            <div>
-                <i class="fas fa-location-arrow"></i>
-                <h3><span class="info">address</span> 523 N GANDHI BAZAR, ANANTAPUR 515001</h3>
+            <div class="contact-text">
+                <h1>contact</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your
+                users know a little more about you.</p>
             </div>
-            <div>
+            <div class="general-info">
+                <i class="fas fa-location-arrow"></i>
+                <p><span class="info">address</span> 523 N Gandhi Bazar, Anantapur 515001</p>
+            </div>
+            <div class="general-info">
                 <i class="fas fa-envelope"></i>
-                <h3><span class="info">email</span> EMAIL@EMAIL.COM</h3>
+                <p><span class="info">email</span> email@email.com</p>
             </div>
-            <div>
+            <div class="general-info">
                 <i class="fas fa-location-arrow"></i>
-                <h3><span class="info">telephone</span> +91 1234567890</h3>
+                <p><span class="info">telephone</span> +91 1234567890</p>
             </div>
-            <div>
-                <input class="enterInfo" type="text" placeholder="NAME">
-                <hr>
-                <input class="enterInfo" type="name" placeholder="EMAIL">
-                <hr>
-                <textarea name="" id="" cols="30" rows="15" placeholder="MESSAGE"></textarea><br>
+            <div class="inputInfo">
+                <input class="enterInfo" type="text" placeholder="name">
+                <input class="enterInfo" type="name" placeholder="email">
+                <input class="enterInfo phone" type="number" placeholder="phone">
+                <textarea name="" id="" cols="30" rows="15" placeholder="Message"></textarea><br>
                 <div class="send">
                     <button>SEND</button>
                 </div>
@@ -161,17 +201,19 @@
         </section>
     </main>
     <footer>
-        <div class="logo">
-            <h1>A</h1>
-        </div>
        <div>
             <i class="fab fa-facebook-square"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-instagram"></i>
         </div>
         <div>
-            <p>&#169 2020 <span class="copyRight">aejaz.</span></p>
-            <p>ALL RIGHTS RESERVED</p>
+            <div class="logo">
+                <h1>A</h1>
+            </div>
+            <div>
+                <p>&#169 2020 <span class="copyRight">aejaz.</span></p>
+                <p>ALL RIGHTS RESERVED</p>
+            </div>
         </div>
     </footer>
 

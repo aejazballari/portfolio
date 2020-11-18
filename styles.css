@@ -86,6 +86,7 @@ video {
   letter-spacing: 5px;
 }
 
+/* about me  */
 .about-me {
   background-color: rgb(51, 59, 80);
   margin: 20px;
@@ -131,9 +132,15 @@ video {
   background-color: rgb(0, 223, 74);
 }
 
+/* skills */
+
 .skills {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./devices.jpg!d") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .skill-text {
@@ -141,44 +148,385 @@ video {
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 2;
+  margin-bottom: 30px;
 }
 
 .skill-text h1 {
+  margin-bottom: 10px;
 }
 
 .skill-text p {
   font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .skill {
   color: lightgrey;
-  margin: 10px 20px;
+  margin: 15px;
   text-transform: uppercase;
 }
 
 .skill p {
   font-size: 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-.skill div {
-  height: 12px;
+.level {
+  height: 14px;
+  margin-top: 3px;
   background-color: rgb(0, 223, 74);
+  animation-duration: 7s;
+  animation-timing-function: ease-out;
 }
 
-.skill span {
+.level-container {
+  display: flex;
+}
+
+.level-container p {
+  margin-left: 8px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.level-html {
+  width: 80%;
+  animation-name: changeWidth-html;
+}
+
+.level-css {
+  width: 70%;
+  animation-name: changeWidth-css;
+}
+
+.level-javascript {
+  width: 40%;
+  background-color: orange;
+  animation-name: changeWidth-js;
+}
+
+/* .level-react {
+  width: 4%;
+  background-color: red;
+  animation-name: changeWidth-react;
+} */
+
+.level-git {
+  width: 75%;
+  animation-name: changeWidth-git;
+}
+
+/* projects */
+
+.projects {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./project.jpg") center/cover no-repeat;
+}
+
+.projects h1 {
+  padding-bottom: 10px;
+  letter-spacing: 5px;
+}
+
+.projects p {
+  letter-spacing: 5px;
+}
+
+.cards {
+  width: 330px;
+  height: 440px;
+  color: black;
+  background-color: white;
+  margin: 50px auto;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-html {
+  background: url("./html-css.jpg") center/cover no-repeat;
+  height: 250px;
+  width: 100%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.image-js {
+  background: url("./js.png") center/cover no-repeat;
+  height: 250px;
+  width: 100%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.image-react {
+  background: url("./react.png") center/cover no-repeat;
+  height: 250px;
+  width: 100%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.forward {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-html div {
+  margin-bottom: -16px;
+}
+
+.image-js div {
+  margin-bottom: -16px;
+}
+
+.image-react div {
+  margin-bottom: -16px;
+}
+.fa-share-square {
+  color: rgb(38, 128, 192);
+  background-color: rgb(180, 223, 254);
+  font-size: 24px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards h2 {
+  text-transform: capitalize;
+}
+
+.cards span {
+  text-transform: uppercase;
+  background-color: rgb(218, 226, 236);
+  color: gray;
   display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-size: 14px;
 }
 
-.html div {
-  max-width: 80%;
+.card-bottom {
+  background-color: rgb(218, 237, 251);
+  width: 100%;
+  height: 50px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  text-transform: capitalize;
 }
-.css div {
-  max-width: 70%;
+
+a {
+  text-decoration: none;
 }
-.javascript div {
-  max-width: 40%;
+
+/* contact */
+
+.contact {
+  background-color: rgb(51, 59, 80);
+  margin: 40px 20px;
+  padding: 60px 10px;
 }
-.git div {
-  max-width: 75%;
+
+.contact-text h1 {
+  text-align: center;
+}
+
+.contact h1 {
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.contact p {
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+
+.fa-location-arrow,
+.fa-envelope {
+  font-size: 1rem;
+  color: rgb(0, 223, 74);
+  margin-top: 2px;
+}
+
+.info {
+  text-transform: uppercase;
+  color: rgb(0, 223, 74);
+  display: block;
+  padding-bottom: 5px;
+}
+
+.general-info {
+  display: flex;
+}
+
+.general-info p {
+  padding-left: 5px;
+}
+
+.enterInfo {
+  width: 49%;
+  height: 35px;
+  margin-right: 1px;
+  padding-left: 10px;
+  text-transform: capitalize;
+}
+
+.enterInfo:hover {
+  background-color: rgb(130, 235, 165);
+}
+
+.phone {
+  width: 100%;
+  margin: 10px auto;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.send button {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(0, 223, 74);
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.send button:hover {
+  background-color: rgb(51, 59, 80);
+}
+
+/* social */
+
+footer {
+  height: 300px;
+  background-color: white;
+  color: black;
+}
+
+.social {
+  height: 100px;
+  width: 100%;
+  background-image: url("./tools.jpg");
+}
+
+/* animation */
+
+@keyframes changeWidth-html {
+  0% {
+    width: 0%;
+    background-color: red;
+  }
+
+  30% {
+    background-color: orange;
+  }
+
+  60% {
+    background-color: rgb(0, 223, 74);
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes changeWidth-css {
+  0% {
+    width: 0%;
+    background-color: red;
+  }
+
+  30% {
+    background-color: orange;
+  }
+
+  60% {
+    background-color: rgb(0, 223, 74);
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes changeWidth-js {
+  0% {
+    width: 0%;
+    background-color: red;
+  }
+
+  30% {
+    background-color: orange;
+  }
+
+  100% {
+    width: 40%;
+  }
+}
+
+/* @keyframes changeWidth-react {
+  0% {
+    width: 0%;
+    background-color: red;
+  }
+
+  100% {
+    width: 4%;
+  }
+} */
+
+@keyframes changeWidth-git {
+  0% {
+    width: 0%;
+    background-color: red;
+  }
+
+  30% {
+    background-color: orange;
+  }
+
+  60% {
+    background-color: rgb(0, 223, 74);
+  }
+
+  100% {
+    width: 75%;
+  }
 }
