@@ -177,6 +177,7 @@ video {
   background-color: rgb(0, 223, 74);
   animation-duration: 7s;
   animation-timing-function: ease-out;
+  /* margin: 5px; */
 }
 
 .level-container {
@@ -395,9 +396,9 @@ a {
 }
 
 .enterInfo {
-  width: 49%;
+  width: 49.3%;
   height: 35px;
-  margin-right: 1px;
+  /* margin-right: 2px; */
   padding-left: 10px;
   text-transform: capitalize;
 }
@@ -419,6 +420,10 @@ textarea {
   font-size: 1rem;
 }
 
+textarea:hover {
+  background-color: rgb(130, 235, 165);
+}
+
 .send button {
   width: 100%;
   height: 35px;
@@ -435,17 +440,15 @@ textarea {
 /* social */
 
 footer {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 350px;
+  text-align: center;
 }
 
 .social {
   height: 200px;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("./to.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./to.jpg") center/cover no-repeat fixed;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -455,6 +458,216 @@ footer {
   display: block;
   padding: 40px 20px;
   font-size: 25px;
+}
+
+.footer-logo {
+  height: 80px;
+  margin: 20px auto;
+}
+
+.logo-div {
+  display: flex;
+  justify-content: center;
+}
+
+.social-mobile {
+  display: none;
+}
+
+.copyRight {
+  margin-top: 20px;
+  text-transform: capitalize;
+  color: lightgrey;
+}
+
+/* media query */
+
+@media screen and (min-width: 1300px) {
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./me6.jpeg") right/cover no-repeat fixed;
+  }
+  .burger-container {
+    display: none;
+  }
+
+  .nav-container {
+    display: block;
+  }
+
+  .nav-header {
+    height: 70px;
+    box-shadow: 1px 1px 10px 1px rgb(85, 84, 84);
+    padding-left: 300px;
+    padding-right: 500px;
+  }
+
+  .links {
+    list-style: none;
+    padding-right: 20px;
+  }
+
+  .links a {
+    color: lightgrey;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .links a:hover {
+    color: rgb(0, 223, 74);
+  }
+
+  .links-container {
+    display: flex;
+  }
+
+  .text {
+    height: 90vh;
+    padding-left: 280px;
+    padding-top: 100px;
+  }
+
+  .name {
+    font-size: 50px;
+  }
+
+  .about-me {
+    max-width: 500px;
+    height: 500px;
+  }
+
+  .about-desktop {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .skill-container {
+    width: 70vw;
+  }
+
+  .level {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .skill {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skill p {
+    /* display: inline-block; */
+  }
+
+  .level-container p {
+    /* display: inline-block; */
+  }
+
+  .project-container {
+    display: flex;
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    position: absolute;
+    top: 150px;
+    z-index: 1;
+  }
+
+  .contact-main {
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+  }
+
+  .contact-left {
+    width: 300px;
+  }
+
+  .contact-text {
+    text-align: left;
+  }
+
+  .general-info {
+    margin-bottom: -10px;
+  }
+
+  .contact-right {
+    width: 300px;
+  }
+
+  .contact-text h1 {
+    text-align: left;
+  }
+
+  .enterInfo {
+    height: 40px;
+  }
+
+  textarea {
+    height: 250px;
+  }
+
+  .social-mobile {
+    display: block;
+    margin-top: 100px;
+    /* height: 100px; */
+  }
+
+  .social-mobile i {
+    font-size: 23px;
+    padding-left: 30px;
+    cursor: pointer;
+  }
+
+  .social i {
+    display: none;
+  }
+
+  .social {
+    height: 500px;
+  }
+
+  .send button {
+    height: 40px;
+  }
+  .footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .logo-div {
+    width: 40%;
+  }
+
+  .copy-div {
+    width: 60%;
+    text-align: left;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+  }
+
+  /* .copyRight {
+    padding-bottom: 10px;
+  } */
 }
 
 /* animation */
