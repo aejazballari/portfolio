@@ -126,7 +126,7 @@ video {
 .about-me {
   background-color: rgb(51, 59, 80);
   margin: 20px;
-  height: 800px;
+  height: 750px;
 }
 
 .logo-main {
@@ -483,7 +483,7 @@ footer {
 .social {
   height: 200px;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("./to.jpg") center/cover no-repeat fixed;
   display: flex;
   justify-content: center;
