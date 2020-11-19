@@ -481,9 +481,10 @@ footer {
 }
 
 .social {
-  height: 200px;
+  height: auto;
   width: 100%;
-  background: url("./social.jpg") center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./social.jpg") center/cover no-repeat fixed;
   display: flex;
   justify-content: center;
   align-items: flex-end;
