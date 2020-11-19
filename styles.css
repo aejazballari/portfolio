@@ -483,7 +483,7 @@ footer {
 .social {
   height: 200px;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("./to.jpg") center/cover no-repeat fixed;
   display: flex;
   justify-content: center;
