@@ -35,12 +35,50 @@ video {
   font-weight: 600;
 }
 
-.nav-header .logo {
+/* .nav-header .logo {
   margin-left: -10px;
-}
+} */
 
 .links-container {
-  display: none;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  position: absolute;
+  right: 0px;
+  top: 8vh;
+  height: 92vh;
+  flex-direction: column;
+  align-items: center;
+  /* transform: translateX(100%); */
+  transition: transform 0.5s ease-in;
+  background-color: rgb(51, 59, 80);
+}
+
+.nav-links {
+  visibility: hidden;
+}
+
+.show-links {
+  visibility: visible;
+}
+
+.nav-header {
+  padding: 0px 10px;
+}
+
+.links a {
+  color: lightgrey;
+  text-transform: uppercase;
+}
+
+.links a:hover {
+  color: rgb(0, 223, 74);
+}
+
+.burger-container {
+  display: block;
+  cursor: pointer;
 }
 
 .burger {
@@ -51,12 +89,10 @@ video {
 }
 
 .nav-header {
-  width: 100%;
-  height: 60px;
+  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
 }
 
 .text {
@@ -239,7 +275,7 @@ video {
 }
 
 .cards {
-  width: 330px;
+  width: 300px;
   height: 440px;
   color: black;
   background-color: white;
@@ -447,7 +483,7 @@ footer {
 .social {
   height: 200px;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./to.jpg") center/cover no-repeat fixed;
   display: flex;
   justify-content: center;
@@ -458,6 +494,11 @@ footer {
   display: block;
   padding: 40px 20px;
   font-size: 25px;
+  cursor: pointer;
+}
+
+.social i:hover {
+  color: rgb(0, 223, 74);
 }
 
 .footer-logo {
@@ -486,6 +527,8 @@ footer {
   header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("./me6.jpeg") right/cover no-repeat fixed;
+    position: relative;
+    z-index: -1;
   }
   .burger-container {
     display: none;
@@ -493,6 +536,10 @@ footer {
 
   .nav-container {
     display: block;
+  }
+
+  .nav-links {
+    visibility: visible;
   }
 
   .nav-header {
@@ -517,7 +564,7 @@ footer {
     color: rgb(0, 223, 74);
   }
 
-  .links-container {
+  .nav-links {
     display: flex;
   }
 
@@ -551,15 +598,15 @@ footer {
     width: 70vw;
   }
 
-  .level {
+  /* .level {
     display: block;
     margin-left: 20px;
-  }
+  } */
 
-  .skill {
+  /* .skill {
     display: flex;
     justify-content: space-between;
-  }
+  } */
 
   .skill p {
     /* display: inline-block; */
