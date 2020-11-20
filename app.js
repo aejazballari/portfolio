@@ -10,27 +10,17 @@ const navSlide  = () => {
     });
 };
 
-//   const shut = () => {
-//     navlinks.addEventListener("click", (e) => {
-//         const close = e.Target.parenetElement;
-//         console.log(close);
-//         close.parenetElement.classList.toggle("links-container");
-//         close.classList.toggle("show-links");
-//     })
-//   } 
-//     // console.log(shut);
-    // const close = e.currentTarget.parentElement;
- 
-    navlinks.forEach(() => {
-        link.addEventListener("click", () => {
-            navlinks.classList.toggle("links-container")
-        })
-        
-    })
-
-    
-
 navSlide();
-// shut();
+
+
+        
+ navlinks.forEach( (click) => {
+     click.addEventListener("click", () => {
+        console.log(click);
+        click.classList.remove("links-container");
+        click.classList.remove("show-links");
+     })
+})
+
 
 
