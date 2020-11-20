@@ -70,7 +70,7 @@ video {
 
 .nav-links {
   /* border: 1px solid black; */
-  height: 100vh;
+  height: 92vh;
   list-style: none;
   display: flex;
   flex-direction: column;
