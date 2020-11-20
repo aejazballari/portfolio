@@ -164,7 +164,8 @@ video {
 .about-me p {
   padding: 1px 30px;
   line-height: 2.3;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  word-spacing: 3px;
 }
 
 .download {
@@ -187,7 +188,7 @@ video {
 
 .skills {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("./img/devices.jpg!d") center/cover no-repeat;
+    url("./img/devices.jpg!d") center/cover no-repeat fixed;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -412,6 +413,7 @@ a {
 
 .contact-text h1 {
   text-align: center;
+  letter-spacing: 3px;
 }
 
 .contact h1 {
@@ -422,6 +424,8 @@ a {
 .contact p {
   line-height: 1.5;
   padding-bottom: 30px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
 }
 
 .fa-location-arrow,
